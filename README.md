@@ -13,6 +13,7 @@ formats the XML files for nice diff and tracks the formatted files as well.
 
 **Features:**
 
+- Every Office file (DOCX, XLSX, PPTS) has complementary `.git` directory with XML and TXT files for diffing
 - Formatting XML files for nicer diffing
 - Generating TXT files from just text nodes for lossy text-only diffing
 - Ability to run as a Git hook for worry free tracking

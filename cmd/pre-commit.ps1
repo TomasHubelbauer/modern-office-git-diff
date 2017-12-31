@@ -9,4 +9,4 @@ Foreach-Object {
 }
 
 # Wait for a bit so we don't have dangling files
-Start-Sleep -Seconds 1
+Start-Sleep -Seconds 5

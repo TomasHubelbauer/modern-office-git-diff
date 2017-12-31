@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-7z
+echo "Me"
 whoami
 echo "Hello from WSL"

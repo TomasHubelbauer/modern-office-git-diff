@@ -1,2 +1,2 @@
-#!/bin/sh
+#!/usr/bin/env bash
 echo "Hello from WSL"

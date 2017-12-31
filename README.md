@@ -11,7 +11,7 @@ it's not a leap to have the other as well if it bring something useful to the ta
 This is achieved using a PowerShell script which unpacks the ZIP file to a tracked directory,
 formats the XML files for nice diff and tracks the formatted files as well.
 
-Features:
+**Features:**
 
 - Formatting XML files for nicer diffing
 - Generating TXT files from just text nodes for lossy text-only diffing

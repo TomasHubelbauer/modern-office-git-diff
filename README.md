@@ -11,6 +11,12 @@ it's not a leap to have the other as well if it bring something useful to the ta
 This is achieved using a PowerShell script which unpacks the ZIP file to a tracked directory,
 formats the XML files for nice diff and tracks the formatted files as well.
 
+Features:
+
+- Formatting XML files for nicer diffing
+- Generating TXT files from just text nodes for lossy text-only diffing
+- Ability to run as a Git hook for worry free tracking
+
 ## Running
 
 Run `./cmd/version-office-files.ps1` in PowerShell to version Office files manually add a pre-commit hook to do it automatically:

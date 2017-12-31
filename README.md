@@ -22,21 +22,22 @@ One last alias for `bash.exe` we could use is `wsl`, but while that works fine i
 
 So yeah, I need to settle for PowerShell.
 
+## Try this out
+
+- Set up the pre-commit hook:
+
 ```sh
-cd .git/hooks
-cp pre-commit.sample pre-commit
-code pre-commit
+cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
+code .git/hooks/pre-commit
 ```
 
-`code .git/hooks/pre-commit`
+`.git/hooks/pre-commit`
 
 ```sh
 #!/usr/bin/env bash
 # Use PowerShell on Windows, Bash on Unix
 powershell cmd/pre-commit.ps1 || bash cmd/pre-commit.sh
 ```
-
-## Try this out
 
 - Open the file and make some changes
   - `open Title.docx` on Unix

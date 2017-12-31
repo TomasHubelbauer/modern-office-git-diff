@@ -14,11 +14,11 @@
         </w:rPr>
         <w:t>Title</w:t>
       </w:r>
-      <w:r w:rsidR="00010DFF">
+      <w:r w:rsidR="00ED39C1">
         <w:rPr>
           <w:lang w:val="en-US" />
         </w:rPr>
-        <w:t xml:space="preserve"> 3</w:t>
+        <w:t xml:space="preserve"> 4</w:t>
       </w:r>
     </w:p>
     <w:p w:rsidR="00A15D7B" w:rsidRDefault="00A15D7B" w:rsidP="00A15D7B">
@@ -34,11 +34,11 @@
         </w:rPr>
         <w:t>Header 1</w:t>
       </w:r>
-      <w:r w:rsidR="00010DFF">
+      <w:r w:rsidR="00ED39C1">
         <w:rPr>
           <w:lang w:val="en-US" />
         </w:rPr>
-        <w:t>-3</w:t>
+        <w:t>-4</w:t>
       </w:r>
     </w:p>
     <w:p w:rsidR="00A15D7B" w:rsidRDefault="00A15D7B" w:rsidP="00A15D7B">
@@ -54,7 +54,7 @@
         <w:t>Paragraph 1</w:t>
       </w:r>
     </w:p>
-    <w:p w:rsidR="00A15D7B" w:rsidRDefault="00010DFF" w:rsidP="00A15D7B">
+    <w:p w:rsidR="00A15D7B" w:rsidRDefault="00ED39C1" w:rsidP="00A15D7B">
       <w:pPr>
         <w:pStyle w:val="Nadpis2" />
         <w:rPr>
@@ -65,7 +65,7 @@
         <w:rPr>
           <w:lang w:val="en-US" />
         </w:rPr>
-        <w:t>Header 2-3</w:t>
+        <w:t>Header 2-4</w:t>
       </w:r>
     </w:p>
     <w:p w:rsidR="00A15D7B" w:rsidRDefault="00A15D7B" w:rsidP="00A15D7B">
@@ -94,11 +94,11 @@
         </w:rPr>
         <w:t>Header 3</w:t>
       </w:r>
-      <w:r w:rsidR="00010DFF">
+      <w:r w:rsidR="00ED39C1">
         <w:rPr>
           <w:lang w:val="en-US" />
         </w:rPr>
-        <w:t>-3</w:t>
+        <w:t>-4</w:t>
       </w:r>
     </w:p>
     <w:p w:rsidR="00A15D7B" w:rsidRDefault="00A15D7B" w:rsidP="00A15D7B">
@@ -133,11 +133,11 @@
         </w:rPr>
         <w:t>The end</w:t>
       </w:r>
-      <w:r w:rsidR="00010DFF">
+      <w:r w:rsidR="00ED39C1">
         <w:rPr>
           <w:lang w:val="en-US" />
         </w:rPr>
-        <w:t xml:space="preserve"> 3</w:t>
+        <w:t xml:space="preserve"> 4</w:t>
       </w:r>
       <w:r>
         <w:rPr>

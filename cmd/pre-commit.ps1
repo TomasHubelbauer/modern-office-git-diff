@@ -1,11 +1,22 @@
-Copy-Item Title.docx Title.zip
-Expand-Archive Title.zip -DestinationPath out/Title -Force
-Remove-Item Title.zip
-# Format XML files
-Get-ChildItem out/Title -Filter *.xml -Recurse |
-Foreach-Object {
-	$path = $_.FullName
-	$xml = [xml](Get-Content -literalPath $path)
-	$xml.Save($path)
-	git add "$path"
+# Iterate Office files in the repository
+Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse  |
+	Foreach-Object {
+	$officePath = $_.FullName
+	Write-Output "Extracting $officePath"
+
+	Copy-Item $officePath "$officePath.zip"
+	Expand-Archive "$officePath.zip" -DestinationPath "$officePath.git" -Force
+	Remove-Item "$officePath.zip"
+
+	# Format XML files for nice diff
+	Get-ChildItem "$officePath.git" -Filter *.xml -Recurse |
+		Foreach-Object {
+		$xmlPath = $_.FullName
+		Write-Output "Formatting $xmlPath"
+
+		([xml](Get-Content -literalPath $xmlPath)).Save($xmlPath)
+
+		Write-Output "Tracking $xmlPath"
+		git add "$xmlPath"
+	}
 }

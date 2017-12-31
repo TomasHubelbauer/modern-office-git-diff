@@ -16,6 +16,8 @@ Since the pre-commit hook will run as a Bash script through MinGW, but we can't 
 
 On Windows 10, we can invoke `bash` which will pick up the default WSL distro (learn about managing distros using [`wslconfig`](https://docs.microsoft.com/en-us/windows/wsl/wsl-config) to see how to change the default) and we can have that execute our commands. So we can write a Unix script and use that on both Windows and Unix. Problem is, `bash` in MinGW will map to MinGW Bash. `bash.exe` to MinGW Bash, too. I have not had success invoking `bash.exe` so that it actually runs WSL and not MinGW Bash. I managed to somehow not make it work even with full `bash.exe` path (trouble passing script there). One could try and invoke a specific distro directly (`ubuntu` or `opensuse-42`), but that gives a *Permission denied* error as of now because the distro paths go to system & hidden perm'd folder in Windows.
 
+One last alias for `bash.exe` we could use is `wsl`, but while that works fine in Batch and PowerShell, MinGW doesn't run it.
+
 So yeah, we need to settle for PowerShell.
 
 We're using the [bash shebang](https://stackoverflow.com/a/10383546/2715716) because we rely on `bash` anyway so `sh` won't cut it.

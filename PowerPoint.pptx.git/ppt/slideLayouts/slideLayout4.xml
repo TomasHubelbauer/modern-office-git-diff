@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<p:sldLayout xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" type="twoObj" preserve="1">
+  <p:cSld name="Dva obsahy">
+    <p:spTree>
+      <p:nvGrpSpPr>
+        <p:cNvPr id="1" name="" />
+        <p:cNvGrpSpPr />
+        <p:nvPr />
+      </p:nvGrpSpPr>
+      <p:grpSpPr>
+        <a:xfrm>
+          <a:off x="0" y="0" />
+          <a:ext cx="0" cy="0" />
+          <a:chOff x="0" y="0" />
+          <a:chExt cx="0" cy="0" />
+        </a:xfrm>
+      </p:grpSpPr>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="2" name="Nadpis 1">
+            <a:extLst>
+              <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+                <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8408DE79-CE89-4446-857D-97946E3592EA}" />
+              </a:ext>
+            </a:extLst>
+          </p:cNvPr>
+          <p:cNvSpPr>
+            <a:spLocks noGrp="1" />
+          </p:cNvSpPr>
+          <p:nvPr>
+            <p:ph type="title" />
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr />
+        <p:txBody>
+          <a:bodyPr />
+          <a:lstStyle />
+          <a:p>
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>KliknutÃ­m lze upravit styl.</a:t>
+            </a:r>
+            <a:endParaRPr lang="en-US" />
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="3" name="ZÃ¡stupnÃ½ symbol pro obsah 2">
+            <a:extLst>
+              <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+                <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{19D620F1-2333-4D79-B34D-30461BF7060B}" />
+              </a:ext>
+            </a:extLst>
+          </p:cNvPr>
+          <p:cNvSpPr>
+            <a:spLocks noGrp="1" />
+          </p:cNvSpPr>
+          <p:nvPr>
+            <p:ph sz="half" idx="1" />
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="838200" y="1825625" />
+            <a:ext cx="5181600" cy="4351338" />
+          </a:xfrm>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr />
+          <a:lstStyle />
+          <a:p>
+            <a:pPr lvl="0" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>Upravte styly pÅ™edlohy textu.</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="1" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>DruhÃ¡ ÃºroveÅˆ</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="2" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>TÅ™etÃ­ ÃºroveÅˆ</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="3" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>ÄŒtvrtÃ¡ ÃºroveÅˆ</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="4" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>PÃ¡tÃ¡ ÃºroveÅˆ</a:t>
+            </a:r>
+            <a:endParaRPr lang="en-US" />
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="4" name="ZÃ¡stupnÃ½ symbol pro obsah 3">
+            <a:extLst>
+              <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+                <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{F9F84282-1DF4-47A7-9FF7-F28A644B40A1}" />
+              </a:ext>
+            </a:extLst>
+          </p:cNvPr>
+          <p:cNvSpPr>
+            <a:spLocks noGrp="1" />
+          </p:cNvSpPr>
+          <p:nvPr>
+            <p:ph sz="half" idx="2" />
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="6172200" y="1825625" />
+            <a:ext cx="5181600" cy="4351338" />
+          </a:xfrm>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr />
+          <a:lstStyle />
+          <a:p>
+            <a:pPr lvl="0" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>Upravte styly pÅ™edlohy textu.</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="1" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>DruhÃ¡ ÃºroveÅˆ</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="2" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>TÅ™etÃ­ ÃºroveÅˆ</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="3" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>ÄŒtvrtÃ¡ ÃºroveÅˆ</a:t>
+            </a:r>
+          </a:p>
+          <a:p>
+            <a:pPr lvl="4" />
+            <a:r>
+              <a:rPr lang="cs-CZ" />
+              <a:t>PÃ¡tÃ¡ ÃºroveÅˆ</a:t>
+            </a:r>
+            <a:endParaRPr lang="en-US" />
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="5" name="ZÃ¡stupnÃ½ symbol pro datum 4">
+            <a:extLst>
+              <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+                <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{AD81704D-B151-455A-A234-C2D89B01073A}" />
+              </a:ext>
+            </a:extLst>
+          </p:cNvPr>
+          <p:cNvSpPr>
+            <a:spLocks noGrp="1" />
+          </p:cNvSpPr>
+          <p:nvPr>
+            <p:ph type="dt" sz="half" idx="10" />
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr />
+        <p:txBody>
+          <a:bodyPr />
+          <a:lstStyle />
+          <a:p>
+            <a:fld id="{91C068E3-A0B4-4FF4-996D-5586FE71804C}" type="datetimeFigureOut">
+              <a:rPr lang="en-US" smtClean="0" />
+              <a:t>12/31/2017</a:t>
+            </a:fld>
+            <a:endParaRPr lang="en-US" />
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="6" name="ZÃ¡stupnÃ½ symbol pro zÃ¡patÃ­ 5">
+            <a:extLst>
+              <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+                <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{6FD9AD18-9EBD-4224-ACA5-BD9AEE465272}" />
+              </a:ext>
+            </a:extLst>
+          </p:cNvPr>
+          <p:cNvSpPr>
+            <a:spLocks noGrp="1" />
+          </p:cNvSpPr>
+          <p:nvPr>
+            <p:ph type="ftr" sz="quarter" idx="11" />
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr />
+        <p:txBody>
+          <a:bodyPr />
+          <a:lstStyle />
+          <a:p>
+            <a:endParaRPr lang="en-US" />
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="7" name="ZÃ¡stupnÃ½ symbol pro ÄÃ­slo snÃ­mku 6">
+            <a:extLst>
+              <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+                <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{32C66D25-5199-42EE-B689-A63127A48220}" />
+              </a:ext>
+            </a:extLst>
+          </p:cNvPr>
+          <p:cNvSpPr>
+            <a:spLocks noGrp="1" />
+          </p:cNvSpPr>
+          <p:nvPr>
+            <p:ph type="sldNum" sz="quarter" idx="12" />
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr />
+        <p:txBody>
+          <a:bodyPr />
+          <a:lstStyle />
+          <a:p>
+            <a:fld id="{0700C4BB-CACC-4866-AB91-105F79C82D78}" type="slidenum">
+              <a:rPr lang="en-US" smtClean="0" />
+              <a:t>â€¹#â€º</a:t>
+            </a:fld>
+            <a:endParaRPr lang="en-US" />
+          </a:p>
+        </p:txBody>
+      </p:sp>
+    </p:spTree>
+    <p:extLst>
+      <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
+        <p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1439592405" />
+      </p:ext>
+    </p:extLst>
+  </p:cSld>
+  <p:clrMapOvr>
+    <a:masterClrMapping />
+  </p:clrMapOvr>
+</p:sldLayout>

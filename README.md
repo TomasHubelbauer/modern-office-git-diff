@@ -1,4 +1,4 @@
-# Modern Office XML Git
+# Modern Office Git Diff
 
 > An experiment in tracking versions of modern Office XML files in Git.
 

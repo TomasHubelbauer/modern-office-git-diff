@@ -1,3 +1,4 @@
 ﻿This file has been updated to serve as an example of the Word file diffing experience.
+This text has been added to showcase diffing.
 Thank you!
 

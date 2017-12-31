@@ -44,3 +44,9 @@ powershell cmd/pre-commit.ps1 || bash cmd/pre-commit.sh
 - `git add Title.docx`
 - `git commit -m "Make some changes"`
 - See the output and the `out/Title` files diff
+
+## Dry run
+
+There doesn't see to be a good way to dry-run the pre-commit hook. (`git commit --dry-run` doesn't run it.)
+
+Either invoke `powershell cmd/pre-commit.ps1` directly or use PowerShell ISE or just commit stuff.

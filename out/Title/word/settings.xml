@@ -13,6 +13,7 @@
   </w:compat>
   <w:rsids>
     <w:rsidRoot w:val="00A15D7B" />
+    <w:rsid w:val="00010DFF" />
     <w:rsid w:val="00856154" />
     <w:rsid w:val="00A15D7B" />
     <w:rsid w:val="00AF17CA" />
@@ -40,7 +41,7 @@
   </w:shapeDefaults>
   <w:decimalSymbol w:val="." />
   <w:listSeparator w:val="," />
-  <w14:docId w14:val="44969D48" />
+  <w14:docId w14:val="2E33065E" />
   <w15:chartTrackingRefBased />
   <w15:docId w15:val="{90CCC0EA-AA90-4325-8FB8-A59C568892EB}" />
 </w:settings>

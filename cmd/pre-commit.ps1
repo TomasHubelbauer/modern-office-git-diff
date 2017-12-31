@@ -1,5 +1,5 @@
 # Iterate Office files in the repository
-Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse  |
+Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	Foreach-Object {
 	$officePath = $_.FullName
 	Write-Output "Extracting $officePath"
@@ -18,5 +18,15 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse  |
 
 		Write-Output "Tracking $xmlPath"
 		git add "$xmlPath"
+	}
+}
+
+# Delete abandoned extractions
+Get-ChildItem .\* -Filter *.git -Recurse |
+	Foreach-Object {
+	If (-Not (Test-Path $_.FullName.TrimEnd(".git"))) {
+		$officePath = $_.FullName
+		Write-Output "Disposing $officePath"
+		Remove-Item $officePath
 	}
 }

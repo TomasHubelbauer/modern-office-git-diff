@@ -1,6 +1,6 @@
 # Modern Office Git Diff
 
-> An experiment in tracking versions of modern Office XML files in Git.
+> An experiment in tracking and diffing versions of modern Microsoft Office files in Git.
 
 Modern Office file formats are ZIP archives with XML files in them.
 The ZIP archives are binary files so Git (and furthemore GitHub, GitLab where diff cannot be tweaked) won't display a nice diff for them.

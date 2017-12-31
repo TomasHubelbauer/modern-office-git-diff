@@ -35,8 +35,7 @@ I ended up using `bash` because I like it nicer than PowerShell.
 
 ```sh
 #!/bin/sh
-echo "Pre-commit hook ran"
-bash -c "echo 'Hello from WSL'"
+bash -c "echo $PWD"
 ```
 
 ### Recompressing with store compression level for plain text readability of the XML components

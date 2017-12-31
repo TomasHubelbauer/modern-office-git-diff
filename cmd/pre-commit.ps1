@@ -15,10 +15,9 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 		Write-Output "Formatting $xmlPath"
 
 		([xml](Get-Content -literalPath $xmlPath)).Save($xmlPath)
-
-		Write-Output "Tracking $xmlPath"
 	}
 
+	Write-Output "Tracking $officePath.git"
 	git add "$officePath.git"
 }
 

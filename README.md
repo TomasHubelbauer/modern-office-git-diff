@@ -13,7 +13,7 @@ formats the XML files for nice diff and tracks the formatted files as well.
 
 ## Running
 
-Run `./cmd/version-office-files.ps1` whenever you want to add a new version, additionally you can do that on each commit with a hook:
+Run `./cmd/version-office-files.ps1` in PowerShell to version Office files manually add a pre-commit hook to do it automatically:
 
 - Set up the pre-commit hook:
 

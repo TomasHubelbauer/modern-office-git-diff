@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-echo "Hello from WSL?"
+echo "See doc/tasks about the planned decision whether to invoke the PowerShell script here or to rewrite it in Bash here"

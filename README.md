@@ -50,3 +50,11 @@ powershell cmd/pre-commit.ps1 || bash cmd/pre-commit.sh
 There doesn't see to be a good way to dry-run the pre-commit hook. (`git commit --dry-run` doesn't run it.)
 
 Either invoke `powershell cmd/pre-commit.ps1` directly or use PowerShell ISE or just commit stuff.
+
+## Studying
+
+See `git log` and [development notes](doc/notes.md).
+
+## Contributing
+
+See [planned contributions](doc/tasks.md).

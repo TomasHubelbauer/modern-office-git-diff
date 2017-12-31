@@ -18,6 +18,12 @@ formats the XML files for nice diff and tracks the formatted files as well.
 - Generating TXT files from just text nodes for lossy text-only diffing
 - Ability to run as a Git hook for worry free tracking
 
+**Drawbacks:**
+
+- Stores compressed *and* uncompressed versions in Git
+- No way to prevent getting compressed and uncompressed version out of sync, still independent writeable files and can forget pre-commit hook
+- Only supports the new XML-based formats, not the old binary ones
+
 **Examples:**
 
 The XML diff captures the exact change whereas the TXT diff captures text-only change for quick content inspection.
@@ -55,6 +61,16 @@ powershell cmd/version-office-files.ps1
 ## Studying
 
 See `git log` and [development notes](doc/notes.md).
+
+Some notable prior art:
+
+- [Martin Fenner (2014)](http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git/)
+- [Jon Hill (2017)](https://www.ficonsulting.com/filabs/MSOfficeGit)
+- [Ben Balter (2015)](https://ben.balter.com/2015/02/06/word-diff/)
+
+All of these focus on on-demand (non-tracked) generating of text-only versions of the files, do not capture structure changes.
+This project aims to explore the other, potentially less useful, but nonetheless interesting, route of versioning both
+the compressed and the uncompressed forms of a file in parallel. See features and drawback for pros and cons.
 
 ## Contributing
 

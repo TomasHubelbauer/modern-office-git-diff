@@ -28,7 +28,7 @@ Get-ChildItem .\* -Filter *.git -Recurse |
 	If (-Not (Test-Path $_.FullName.TrimEnd(".git"))) {
 		$officePath = $_.FullName
 		Write-Output "Disposing $officePath"
-		Remove-Item $officePath
+		Remove-Item $officePath -Recurse
 		git add "$officePath"
 	}
 }

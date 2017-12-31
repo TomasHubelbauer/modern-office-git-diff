@@ -172,6 +172,14 @@
         </w:rPr>
         <w:t xml:space="preserve"> real</w:t>
       </w:r>
+      <w:r w:rsidR="00D306D8">
+        <w:rPr>
+          <w:lang w:val="en-US" />
+        </w:rPr>
+        <w:t xml:space="preserve"> real</w:t>
+      </w:r>
+      <w:bookmarkStart w:id="0" w:name="_GoBack" />
+      <w:bookmarkEnd w:id="0" />
       <w:r>
         <w:rPr>
           <w:lang w:val="en-US" />
@@ -185,8 +193,6 @@
           <w:lang w:val="en-US" />
         </w:rPr>
       </w:pPr>
-      <w:bookmarkStart w:id="0" w:name="_GoBack" />
-      <w:bookmarkEnd w:id="0" />
     </w:p>
     <w:sectPr w:rsidR="00A15D7B" w:rsidRPr="00A15D7B">
       <w:pgSz w:w="12240" w:h="15840" />

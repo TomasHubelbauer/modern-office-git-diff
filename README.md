@@ -2,6 +2,8 @@
 
 An experiment in tracking versions of DOCX files in Git.
 
+[Try this out](#try-this-out)
+
 [There's prior art to this, I go for something simpler.](http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git/)
 
 Modern Office file formats are ZIP archives with XML files in them.
@@ -26,7 +28,7 @@ cp pre-commit.sample pre-commit
 code pre-commit
 ```
 
-`.git/hooks/pre-commit`
+`code .git/hooks/pre-commit`
 
 ```sh
 #!/usr/bin/env bash
@@ -34,8 +36,11 @@ code pre-commit
 powershell cmd/pre-commit.ps1 || bash cmd/pre-commit.sh
 ```
 
-`cmd/pre-commit.ps1`
+## Try this out
 
-```powershell
-Write-Output "Hello from PowerShell"
-```
+- Open the file and make some changes
+  - `open Title.docx` on Unix
+  - `start Title.docx` on Windows
+- `git add Title.docx`
+- `git commit -m "Make some changes"`
+- See the output and the `out/Title` files diff

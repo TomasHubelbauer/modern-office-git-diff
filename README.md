@@ -35,7 +35,7 @@ I ended up using `bash` because I like it nicer than PowerShell.
 
 ```sh
 #!/bin/sh
-bash -c "echo $PWD"
+bash cmd/pre-commit.sh
 ```
 
 ### Recompressing with store compression level for plain text readability of the XML components

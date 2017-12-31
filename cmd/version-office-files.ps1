@@ -14,7 +14,19 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 		$xmlPath = $_.FullName
 		Write-Output "Formatting $xmlPath"
 
-		([xml](Get-Content -literalPath $xmlPath)).Save($xmlPath)
+		$xml = ([xml](Get-Content -literalPath $xmlPath))
+		$xml.Save($xmlPath)
+
+		# Export only text nodes for text-only lossy diff
+		$txt = ""
+		$nodes = $xml.SelectNodes("//text()")
+		foreach ($node in $nodes) {
+			$txt += $node.Value + "`n"
+		}
+
+		$txtPath = "$xmlPath.txt"
+		Write-Output "Generating $txtPath"
+		$txt | Out-File -literalPath $txtPath
 	}
 
 	Write-Output "Tracking $officePath.git"

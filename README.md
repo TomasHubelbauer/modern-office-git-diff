@@ -36,5 +36,6 @@ bash cmd/pre-commit.sh
 
 ```sh
 #!/usr/bin/env bash
+# Rely on host system having the `7z` prerequisite
 echo "Hello from WSL!"
 ```

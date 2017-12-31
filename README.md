@@ -18,6 +18,13 @@ formats the XML files for nice diff and tracks the formatted files as well.
 - Generating TXT files from just text nodes for lossy text-only diffing
 - Ability to run as a Git hook for worry free tracking
 
+**Examples:**
+
+The XML diff captures the exact change whereas the TXT diff captures text-only change for quick content inspection.
+
+- [Example Word diff](https://github.com/TomasHubelbauer/modern-office-xml-git/commit/3413eacaaeb236a06033a443d7979f19207a613b)
+- [Example Excel diff](https://github.com/TomasHubelbauer/modern-office-xml-git/commit/5f4ef47d345ab451f17e41ebf0befbc842ff5dba)
+
 ## Running
 
 Run `./cmd/version-office-files.ps1` in PowerShell to version Office files manually add a pre-commit hook to do it automatically:

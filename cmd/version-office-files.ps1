@@ -26,7 +26,7 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 
 		$txtPath = "$xmlPath.txt"
 		Write-Output "Generating $txtPath"
-		$txt | Out-File -literalPath $txtPath
+		$txt | Out-File -literalPath $txtPath -Encoding UTF8
 	}
 
 	Write-Output "Tracking $officePath.git"

@@ -26,14 +26,17 @@ I tried invoking `ubuntu` to utilize WSL on Windows 10, but it failed with *Perm
 I tried invoking `powershell` and it works, but like WSL is locked to Windows only.
 Powershell can be installed for Linux as well and the PowerShell package could probably be added to MinGW to make it portable, but see above.
 
-I tried invoking `bash` and ?
+I tried invoking `bash` and it worked, so specific distros don't work, but `bash` which defaults to default distro does.
+See about `wslconfig` for how to configure default distro and manage WSL distros.
+
+I ended up using `bash` because I like it nicer than PowerShell.
 
 `pre-commit.sh`
 
 ```sh
 #!/bin/sh
 echo "Pre-commit hook ran"
-powershell -c "echo Hello from Ubuntu"
+bash -c "echo 'Hello from WSL'"
 ```
 
 ### Recompressing with store compression level for plain text readability of the XML components

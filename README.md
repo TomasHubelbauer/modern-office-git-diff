@@ -8,7 +8,7 @@ An experiment in tracking versions of DOCX files in Git.
 
 Implemented in this repo.
 
-[Git hooks](https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks)
+[Learn about Git hooks here.](https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks)
 
 ```sh
 cd .git/hooks
@@ -16,14 +16,17 @@ cp pre-commit.sample pre-commit
 code pre-commit
 ```
 
-Git on Windows installs its own Bash. To be able to use `7z` from there we need to add its package to MinGW.
+I'm on Windows and I'm using the default Git for Windows installer.
+This installed installs its own Bash for Git powered by MinGW.
 
-Unfortunately everything about MinGW sucks and it is a piece of shit that should not exist.
+Initially I thought I could just install the `z7` package to MinGW, but then I remembered MinGW is a worthless piece of crap.
 
-That's why we'll use either PowerShell of WSL (in our case the Ubuntu distribution) instead of fighting MinGW!
+I tried invoking `ubuntu` to utilize WSL on Windows 10, but it failed with *Permission denied* error.
 
-- `ubuntu` gives me *Permission denied* 
-- `powershell`
+I tried invoking `powershell` and it works, but like WSL is locked to Windows only.
+Powershell can be installed for Linux as well and the PowerShell package could probably be added to MinGW to make it portable, but see above.
+
+I tried invoking `bash` and ?
 
 `pre-commit.sh`
 

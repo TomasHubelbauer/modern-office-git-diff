@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="1" uniqueCount="1">
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="2" uniqueCount="2">
   <si>
-    <t>Hello, World!</t>
+    <t>This file has been updated to demonstrate Excel diffing experience.</t>
+  </si>
+  <si>
+    <t>Thank you!</t>
   </si>
 </sst>

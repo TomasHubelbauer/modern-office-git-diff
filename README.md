@@ -16,11 +16,21 @@ cp pre-commit.sample pre-commit
 code pre-commit
 ```
 
+Git on Windows installs its own Bash. To be able to use `7z` from there we need to add its package to MinGW.
+
+Unfortunately everything about MinGW sucks and it is a piece of shit that should not exist.
+
+That's why we'll use either PowerShell of WSL (in our case the Ubuntu distribution) instead of fighting MinGW!
+
+- `ubuntu` gives me *Permission denied* 
+- `powershell`
+
 `pre-commit.sh`
 
 ```sh
 #!/bin/sh
 echo "Pre-commit hook ran"
+powershell -c "echo Hello from Ubuntu"
 ```
 
 ### Recompressing with store compression level for plain text readability of the XML components

@@ -4,7 +4,8 @@ Remove-Item Title.zip
 # Format XML files
 Get-ChildItem out/Title -Filter *.xml -Recurse |
 Foreach-Object {
-	$xml = [xml](Get-Content -literalPath $_.FullName)
-	$xml.Save($_.FullName)
-	git add "$_.FullName"
+	$path = $_.FullName
+	$xml = [xml](Get-Content -literalPath $path)
+	$xml.Save($path)
+	git add "$path"
 }

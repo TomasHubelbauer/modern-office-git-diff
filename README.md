@@ -1,4 +1,4 @@
-# docx-git
+# Modern Office XML Git
 
 An experiment in tracking versions of DOCX files in Git.
 

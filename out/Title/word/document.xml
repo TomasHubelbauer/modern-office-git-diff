@@ -113,16 +113,8 @@
         <w:rPr>
           <w:lang w:val="en-US" />
         </w:rPr>
-        <w:t>One last test</w:t>
+        <w:t xml:space="preserve">One last test! </w:t>
       </w:r>
-      <w:proofErr w:type="gramStart" />
-      <w:r>
-        <w:rPr>
-          <w:lang w:val="en-US" />
-        </w:rPr>
-        <w:t xml:space="preserve">! </w:t>
-      </w:r>
-      <w:proofErr w:type="gramEnd" />
       <w:r w:rsidRPr="003F55FD">
         <w:rPr>
           <mc:AlternateContent>
@@ -142,6 +134,14 @@
           </mc:Fallback>
         </mc:AlternateContent>
       </w:r>
+      <w:r w:rsidR="00E501D6">
+        <w:rPr>
+          <w:lang w:val="en-US" />
+        </w:rPr>
+        <w:t xml:space="preserve"> This time for real!</w:t>
+      </w:r>
+      <w:bookmarkStart w:id="0" w:name="_GoBack" />
+      <w:bookmarkEnd w:id="0" />
     </w:p>
     <w:p w:rsidR="00D765A3" w:rsidRDefault="00D765A3" w:rsidP="00A15D7B">
       <w:pPr>
@@ -149,8 +149,6 @@
           <w:lang w:val="en-US" />
         </w:rPr>
       </w:pPr>
-      <w:bookmarkStart w:id="0" w:name="_GoBack" />
-      <w:bookmarkEnd w:id="0" />
     </w:p>
     <w:p w:rsidR="00A15D7B" w:rsidRDefault="00A15D7B" w:rsidP="00A15D7B">
       <w:pPr>

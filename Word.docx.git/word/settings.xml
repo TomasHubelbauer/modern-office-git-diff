@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:settings xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" mc:Ignorable="w14 w15 w16se w16cid">
   <w:zoom w:percent="100" />
-  <w:proofState w:spelling="clean" w:grammar="clean" />
   <w:defaultTabStop w:val="720" />
   <w:characterSpacingControl w:val="doNotCompress" />
   <w:compat>
@@ -22,6 +21,7 @@
     <w:rsid w:val="00AE7653" />
     <w:rsid w:val="00AF17CA" />
     <w:rsid w:val="00B24E8E" />
+    <w:rsid w:val="00C37D68" />
     <w:rsid w:val="00D306D8" />
     <w:rsid w:val="00D765A3" />
     <w:rsid w:val="00DE2D0D" />
@@ -51,7 +51,7 @@
   </w:shapeDefaults>
   <w:decimalSymbol w:val="." />
   <w:listSeparator w:val="," />
-  <w14:docId w14:val="2FC04D2D" />
+  <w14:docId w14:val="3F6D88D1" />
   <w15:chartTrackingRefBased />
   <w15:docId w15:val="{90CCC0EA-AA90-4325-8FB8-A59C568892EB}" />
 </w:settings>

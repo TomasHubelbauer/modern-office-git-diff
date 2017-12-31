@@ -8,6 +8,21 @@ An experiment in tracking versions of DOCX files in Git.
 
 Implemented in this repo.
 
+[Git hooks](https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks)
+
+```sh
+cd .git/hooks
+cp pre-commit.sample pre-commit
+code pre-commit
+```
+
+`pre-commit.sh`
+
+```sh
+#!/bin/sh
+echo "Pre-commit hook ran"
+```
+
 ### Recompressing with store compression level for plain text readability of the XML components
 
 Diff won't show in VS Code because file is technically still a binary.

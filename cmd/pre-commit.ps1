@@ -17,8 +17,9 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 		([xml](Get-Content -literalPath $xmlPath)).Save($xmlPath)
 
 		Write-Output "Tracking $xmlPath"
-		git add "$xmlPath"
 	}
+
+	git add "$officePath"
 }
 
 # Delete abandoned extractions
@@ -28,5 +29,6 @@ Get-ChildItem .\* -Filter *.git -Recurse |
 		$officePath = $_.FullName
 		Write-Output "Disposing $officePath"
 		Remove-Item $officePath
+		git add "$officePath"
 	}
 }

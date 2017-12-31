@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 echo "Me"
-whoami
+uname -a
 echo "Hello from WSL"

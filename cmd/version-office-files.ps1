@@ -9,7 +9,7 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	Remove-Item "$officePath.zip"
 
 	# Format XML files for nice diff
-	Get-ChildItem "$officePath.git" -Filter *.xml -Recurse |
+	Get-ChildItem "$officePath.git" -Include ("*.xml", "*.rels") -Recurse |
 		Foreach-Object {
 		$xmlPath = $_.FullName
 		Write-Output "Formatting $xmlPath"

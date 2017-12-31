@@ -33,9 +33,9 @@ The XML diff captures the exact change whereas the TXT diff captures text-only c
 
 ## Running
 
-Run `./cmd/version-office-files.ps1` in PowerShell
-(use PowerShell ISE or click on the file in VS Code and use PowerShell Integrated Console that will pop up to avoid security error)
-to version Office files manually add a pre-commit hook to do it automatically:
+Run `./cmd/version-office-files.ps1` in PowerShell to version Office files manually.
+(Use PowerShell ISE or click on the file in VS Code and use PowerShell Integrated Console that will pop up to avoid security error.)
+Add a pre-commit hook to do it automatically:
 
 - Set up the pre-commit hook:
 

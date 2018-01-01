@@ -2,6 +2,13 @@
 Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	Foreach-Object {
 	$officePath = $_.FullName
+	Write-Output "Checking $officePath"
+	$diff = (git diff "$officePath") | Out-String
+	If (-Not ($diff)) {
+		Write-Output "Skipping $officePath"
+		return
+	}
+
 	Write-Output "Extracting $officePath"
 
 	Copy-Item $officePath "$officePath.zip"

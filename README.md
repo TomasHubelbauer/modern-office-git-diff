@@ -65,8 +65,8 @@ See `git log` and [development notes](doc/notes.md).
 Some notable prior art:
 
 - [Martin Fenner (2014)](http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git/)
-- [Jon Hill (2017)](https://www.ficonsulting.com/filabs/MSOfficeGit)
 - [Ben Balter (2015)](https://ben.balter.com/2015/02/06/word-diff/)
+- [Jon Hill (2017)](https://www.ficonsulting.com/filabs/MSOfficeGit)
 
 All of these focus on on-demand (non-tracked) generating of text-only versions of the files, do not capture structure changes.
 This project aims to explore the other, potentially less useful, but nonetheless interesting, route of versioning both

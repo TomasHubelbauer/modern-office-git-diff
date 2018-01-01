@@ -11,6 +11,13 @@ it's not a leap to have the other as well if it bring something useful to the ta
 This is achieved using a PowerShell script which unpacks the ZIP file to a tracked directory,
 formats the XML files for nice diff and tracks the formatted files as well.
 
+**Examples:**
+
+The XML diff captures the exact change whereas the TXT diff captures text-only change for quick content inspection.
+
+- [Example Word diff](https://github.com/TomasHubelbauer/modern-office-xml-git/commit/3413eacaaeb236a06033a443d7979f19207a613b)
+- [Example Excel diff](https://github.com/TomasHubelbauer/modern-office-xml-git/commit/5f4ef47d345ab451f17e41ebf0befbc842ff5dba)
+
 **Features:**
 
 - Every Office file (DOCX, XLSX, PPTS) has complementary `.git` directory with XML and TXT files for diffing
@@ -24,13 +31,6 @@ formats the XML files for nice diff and tracks the formatted files as well.
 - No way to prevent getting compressed and uncompressed version out of sync, still independent writeable files and can forget pre-commit hook
 - Only supports the new XML-based formats, not the old binary ones
 - Online editing at GitHub/GitLab won't (obviously) run the pre-commit hook
-
-**Examples:**
-
-The XML diff captures the exact change whereas the TXT diff captures text-only change for quick content inspection.
-
-- [Example Word diff](https://github.com/TomasHubelbauer/modern-office-xml-git/commit/3413eacaaeb236a06033a443d7979f19207a613b)
-- [Example Excel diff](https://github.com/TomasHubelbauer/modern-office-xml-git/commit/5f4ef47d345ab451f17e41ebf0befbc842ff5dba)
 
 ## Running
 

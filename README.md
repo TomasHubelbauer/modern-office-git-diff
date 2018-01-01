@@ -23,6 +23,7 @@ formats the XML files for nice diff and tracks the formatted files as well.
 - Stores compressed *and* uncompressed versions in Git
 - No way to prevent getting compressed and uncompressed version out of sync, still independent writeable files and can forget pre-commit hook
 - Only supports the new XML-based formats, not the old binary ones
+- Online editing at GitHub/GitLab won't (obviously) run the pre-commit hook
 
 **Examples:**
 

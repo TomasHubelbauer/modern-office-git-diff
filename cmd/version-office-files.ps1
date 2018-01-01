@@ -1,7 +1,13 @@
+# Tags of parent elements of text nodes whose values should be surrounded with extra blank lines in text-only output (block nodes)
+$wordSurround = @()
+$excelSurround = @()
+$powerPointSurround = @()
+
 # Iterate Office files in the repository
 Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	Foreach-Object {
 	$officePath = $_.FullName
+	$officeExt = $_.Extension
 	Write-Output "Checking $officePath"
 	$diff = (git diff "$officePath") | Out-String
 	If (-Not ($diff)) {
@@ -28,7 +34,19 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 		$txt = ""
 		$nodes = $xml.SelectNodes("//text()")
 		foreach ($node in $nodes) {
-			$txt += $node.Value + "`n"
+			$surround = $false
+			switch ($officeExt) {
+				".docx" { $surround = $wordSurround -contains $node.ParentNode.Name }
+				".xlsx" { $surround = $excelSurround -contains $node.ParentNode.Name }
+				".pptx" { $surround = $powerPointSurround -contains $node.ParentNode.Name }
+			}
+
+			if ($surround) {
+				$txt += "`n" + $node.Value + "`n`n"
+			}
+			else {
+				$txt += $node.Value + "`n"
+			}
 		}
 
 		$txtPath = "$xmlPath.txt"

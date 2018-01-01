@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Generated. Do not edit. https://github.com/TomasHubelbauer/modern-office-git-diff -->
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
   <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml" />
   <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme" Target="theme/theme1.xml" />

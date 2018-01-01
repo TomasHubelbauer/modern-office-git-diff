@@ -1,4 +1,5 @@
-﻿Microsoft Excel
+﻿# Generated. Do not edit. https://github.com/TomasHubelbauer/modern-office-git-diff
+Microsoft Excel
 0
 false
 Listy

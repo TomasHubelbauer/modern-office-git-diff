@@ -6,9 +6,8 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	Write-Output "Checking $officePath"
 	$diff = (git diff "$officePath") | Out-String
 	If (-Not ($diff)) {
-		# TODO: Fix this, need to use something other than git log? Currently always skips Office files.
-		#Write-Output "Skipping $officePath"
-		#return
+		Write-Output "Skipping $officePath"
+		return
 	}
 
 	Write-Output "Extracting $officePath"

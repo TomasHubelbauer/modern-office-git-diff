@@ -23,14 +23,17 @@ The XML diff captures the exact change whereas the TXT diff captures text-only c
 - Every Office file (DOCX, XLSX, PPTS) has complementary `.git` directory with XML and TXT files for diffing
 - Formatting XML files for nicer diffing
 - Generating TXT files from just text nodes for lossy text-only diffing
+- Warning in extracted and generated content about read-onliness of the data
+- Skipping processing unchanged files for fast operation even in repos with many Office files
+- Removing associated generated content automatically for Office files that have been removed from the repo
 - Ability to run as a Git hook for worry free tracking
 
-**Drawbacks:**
+**Limitations:**
 
-- Stores compressed *and* uncompressed versions in Git
-- No way to prevent getting compressed and uncompressed version out of sync, still independent writeable files and can forget pre-commit hook
-- Only supports the new XML-based formats, not the old binary ones
-- Online editing at GitHub/GitLab won't (obviously) run the pre-commit hook
+- Stores compressed *and* uncompressed versions in Git - by design, for plain text diffing and binary source of truth
+- No support for DOC, XLS and PPT, only XLSX, DOCX and PPTX (XML based formats) - by design, no use diffing binary formats
+- Risk of getting generated files out of sync if hook is not run or a manual edit is made to the generated files
+- Won't process files uploaded to repository through GitHub/GitLab online UI (no pre-commit hook)
 
 ## Running
 

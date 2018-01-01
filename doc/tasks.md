@@ -16,3 +16,7 @@ In both cases newlines are appended, not spaces or nothing for inline elements t
 Lines followed by other lines will indicate separate inline elements.
 
 Lines surrounded by empty lines will indicate block elements.
+
+## Fix broken skipping unchanged files
+
+Currently skips Office files even if they have changes, probably can't use `git log` but need something else.

@@ -1,13 +1,8 @@
-# Tags of parent elements of text nodes whose values should be surrounded with extra blank lines in text-only output (block nodes)
-$wordSurround = @()
-$excelSurround = @()
-$powerPointSurround = @()
-
 # Iterate Office files in the repository
 Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	Foreach-Object {
 	$officePath = $_.FullName
-	$officeExt = $_.Extension
+
 	Write-Output "Checking $officePath"
 	$diff = (git diff "$officePath") | Out-String
 	If (-Not ($diff)) {
@@ -17,7 +12,6 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	}
 
 	Write-Output "Extracting $officePath"
-
 	Copy-Item $officePath "$officePath.zip"
 	Expand-Archive "$officePath.zip" -DestinationPath "$officePath.git" -Force
 	Remove-Item "$officePath.zip"
@@ -26,32 +20,20 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	Get-ChildItem "$officePath.git" -Include ("*.xml", "*.rels") -Recurse |
 		Foreach-Object {
 		$xmlPath = $_.FullName
-		Write-Output "Formatting $xmlPath"
 
+		Write-Output "Formatting $xmlPath"
 		$xml = ([xml](Get-Content -literalPath $xmlPath))
 		$xml.Save($xmlPath)
 
 		# Export only text nodes for text-only lossy diff
+		Write-Output "Generating $txtPath"
 		$txt = ""
 		$nodes = $xml.SelectNodes("//text()")
 		foreach ($node in $nodes) {
-			$surround = $false
-			switch ($officeExt) {
-				".docx" { $surround = $wordSurround -contains $node.ParentNode.Name }
-				".xlsx" { $surround = $excelSurround -contains $node.ParentNode.Name }
-				".pptx" { $surround = $powerPointSurround -contains $node.ParentNode.Name }
-			}
-
-			if ($surround) {
-				$txt += "`n" + $node.Value + "`n`n"
-			}
-			else {
-				$txt += $node.Value + "`n"
-			}
+			$txt += $node.Value + "`n"
 		}
 
 		$txtPath = "$xmlPath.txt"
-		Write-Output "Generating $txtPath"
 		$txt | Out-File -literalPath $txtPath -Encoding UTF8
 	}
 

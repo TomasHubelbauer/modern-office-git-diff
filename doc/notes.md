@@ -4,7 +4,7 @@
 
 ## 2018-01-01
 
-Implemented skipping processing unchanged Office files (using `git diff` to tell if a file has changes) and documented
+Implemented skipping processing unchanged Office files (using `git diff` to tell if a file has changes) and drafted an
 intended new feature: in text-only TXT file for each XML file, surround block elements by empty lines to set the apart.
 
 ## 2017-12-31

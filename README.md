@@ -34,7 +34,8 @@ The XML diff captures the exact change whereas the TXT diff captures text-only c
 
 ## Running
 
-Run PowerShell scripts using VS Code PowerShell Integrated Console (pops up upon clicking any `.ps1` file) to avoid security blocks.
+Run PowerShell scripts using VS Code PowerShell Integrated Console to avoid security blocks.
+Open it by clicking on any `.ps1` file with integrated terminal open or running the *PowerShell: Show Integrated Console* VS Code command (F1).
 
 - Run `cmd/version-office-files.ps1` from the command line
 - Run `cmd/edit-in-powrshell-ise.ps1` to open in PowerShell ISE (Integrated Shell Environment)

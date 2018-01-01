@@ -34,11 +34,11 @@ The XML diff captures the exact change whereas the TXT diff captures text-only c
 
 ## Running
 
-Run `./cmd/version-office-files.ps1` in PowerShell to version Office files manually.
-(Use PowerShell ISE or click on the file in VS Code and use PowerShell Integrated Console that will pop up to avoid security error.)
-Add a pre-commit hook to do it automatically:
+Run PowerShell scripts using VS Code PowerShell Integrated Console (pops up upon clicking any `.ps1` file) to avoid security blocks.
 
-- Set up the pre-commit hook:
+- Run `cmd/version-office-files.ps1` from the command line
+- Run `cmd/edit-in-powrshell-ise.ps1` to open in PowerShell ISE (Integrated Shell Environment)
+- Add a Git pre-commit hook:
 
 ```sh
 cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
@@ -52,12 +52,11 @@ code .git/hooks/pre-commit
 powershell cmd/version-office-files.ps1
 ```
 
-- Open the files and make some changes
-  - `open` on Unix
-  - `start` on Windows
-- `git add *`
-- `git commit -m "Make some changes"`
-- See the commit diff for the Office changes
+Observe commit diffs to see Office file changes in the XML and TXT files.
+
+## Contributing
+
+See [planned development](doc/tasks.md).
 
 ## Studying
 
@@ -72,7 +71,3 @@ Some notable prior art:
 All of these focus on on-demand (non-tracked) generating of text-only versions of the files, do not capture structure changes.
 This project aims to explore the other, potentially less useful, but nonetheless interesting, route of versioning both
 the compressed and the uncompressed forms of a file in parallel. See features and drawback for pros and cons.
-
-## Contributing
-
-See [planned development](doc/tasks.md).

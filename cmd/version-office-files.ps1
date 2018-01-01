@@ -4,7 +4,7 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 	$officePath = $_.FullName
 
 	Write-Output "Checking $officePath"
-	$diff = (git diff "$officePath") | Out-String
+	$diff = (git diff --staged "$officePath") | Out-String
 	If (-Not ($diff)) {
 		Write-Output "Skipping $officePath"
 		return

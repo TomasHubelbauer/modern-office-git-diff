@@ -72,7 +72,7 @@ Run `cmd/run-tests.ps1`.
 
 ## Licensing
 
-This repository is licensed under the MIT license.
+This repository is licensed under the [MIT license](LICENSE.md).
 
 ## Contributing
 

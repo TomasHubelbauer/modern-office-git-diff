@@ -2,6 +2,11 @@
 
 > Development log.
 
+## 2018-01-02
+
+Implemented tests by the way of generating Word, Excel, PowerPoint files and running the script on them, then checking
+the resulting extracted files for exepcted strings.
+
 ## 2018-01-01
 
 Implemented skipping processing unchanged Office files (using `git diff` to tell if a file has changes).

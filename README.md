@@ -70,6 +70,10 @@ Open it by clicking on any `.ps1` file with integrated terminal open or running 
 
 Run `cmd/run-tests.ps1`.
 
+## Licensing
+
+This repository is licensed under the MIT license.
+
 ## Contributing
 
 See [planned development](doc/tasks.md).

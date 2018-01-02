@@ -35,6 +35,11 @@ The XML diff captures the exact change whereas the TXT diff captures text-only c
 - Risk of getting generated files out of sync if hook is not run or a manual edit is made to the generated files
 - Won't process files uploaded to repository through GitHub/GitLab online UI (no pre-commit hook)
 
+**Support:**
+
+- Windows: 10.0.16299+ (`Get-WmiObject -Class Win32_OperatingSystem | Select-Object Version`)
+- Unix: 4.4.0+ (`uname -r`)
+
 ## Running
 
 Run PowerShell scripts using VS Code PowerShell Integrated Console to avoid security blocks.

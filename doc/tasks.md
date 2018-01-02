@@ -4,10 +4,21 @@
 
 ## Add tests
 
-- Add `test` folder
-- Add Word, Excel and PowerPoint files
-- Add `.git.chk` directory for "expected"
-- Add a script for generating `.git` directories in `test` only for "actual" and running dir diff and checking for no differences
+- Use [officegen](https://www.npmjs.com/package/officegen) to generate files in a temp directory
+- Insert spans with various formatting options depending on the format kind
+- Run the PowerShell script on the generated files
+- Check the text-only generated files to see if captured spans are there
+- Also test checking for unchanged files etc.
+
+`node --experimental-modules test.mjs`
+
+```js
+// https://www.npmjs.com/package/officegen
+import codegen from 'codegen';
+
+const word = codegen('0133…');
+// Change `on('finalize') and on('error') to deferred promises to utilize `async`/`await`
+```
 
 ## Verify PowerShell script runs okay on non-Windows PowerShell
 

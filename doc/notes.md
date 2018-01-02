@@ -2,6 +2,15 @@
 
 > Development log.
 
+## 2018-01-02 continued
+
+Using WSL (Ubuntu) to test portability of the PowerShell script.
+Use `lsb_release -a` to find WSL Ubuntu version and use
+[PowerShell Linux installation instructions](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
+to find matching instructions.
+
+Script runs fucking flawlessly, yeah!
+
 ## 2018-01-02
 
 Implemented tests by the way of generating Word, Excel, PowerPoint files and running the script on them, then checking

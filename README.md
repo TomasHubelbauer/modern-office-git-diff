@@ -37,8 +37,8 @@ The XML diff captures the exact change whereas the TXT diff captures text-only c
 
 **Support:**
 
-- Windows: 10.0.16299+ (`Get-WmiObject -Class Win32_OperatingSystem | Select-Object Version`)
-- Unix: 4.4.0+ (`uname -r`)
+- Windows: 10.0.16299+ (`cmd -c ver`)
+- Ubuntu: 16.0.0+ (`lsb-release -r`)
 
 ## Running
 

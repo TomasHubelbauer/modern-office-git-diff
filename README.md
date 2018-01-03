@@ -43,7 +43,7 @@ The XML diff captures the exact change whereas the TXT diff captures text-only c
 ## Running
 
 Run PowerShell scripts using VS Code PowerShell Integrated Console to avoid security blocks.
-Open it by clicking on any `.ps1` file with integrated terminal open or running the *PowerShell: Show Integrated Console* VS Code command (F1).
+Open it by clicking on any `.ps1` file with integrated terminal open or running the *PowerShell: Show Integrated Console* VS Code command (`F1`+(`p`+`s`+`c`+`i`)).
 
 - Run `cmd/version-office-files.ps1` from the command line
 - Run `cmd/edit-in-powrshell-ise.ps1` to open in PowerShell ISE (Integrated Shell Environment)
@@ -74,7 +74,7 @@ Observe commit diffs to see Office file changes in the XML and TXT files.
 ## Testing
 
 Run PowerShell scripts using VS Code PowerShell Integrated Console to avoid security blocks.
-Open it by clicking on any `.ps1` file with integrated terminal open or running the *PowerShell: Show Integrated Console* VS Code command (F1).
+Open it by clicking on any `.ps1` file with integrated terminal open or running the *PowerShell: Show Integrated Console* VS Code command (`F1`+(`p`+`s`+`c`+`i`)).
 
 Run `cmd/run-tests.ps1`.
 

@@ -14,9 +14,16 @@ const exec = util.promisify(child_process.exec);
 
 async function test() {
 	console.log('Running Office tests…\n');
-	await run(testWordBasic, 'docx', 'Word - basic');
-	await run(testExcelBasic, 'xlsx', 'Excel - basic');
-	await run(testPowerPointBasic, 'pptx', 'PowerPoint - basic');
+	const results = [];
+
+	results.push(await run(testWordBasic, 'docx', 'Word - basic'));
+	results.push(await run(testExcelBasic, 'xlsx', 'Excel - basic'));
+	results.push(await run(testPowerPointBasic, 'pptx', 'PowerPoint - basic'));
+
+	console.log('\n\n');
+	for (const result of results) {
+		console.log(result);
+	}
 }
 
 test();
@@ -79,11 +86,11 @@ async function run(harness, type, name) {
 	}
 
 
-	console.log(`Testing ${officeFilePath}…`);
+	console.log(`Testing ${officeFilePath}…\n`);
 	try {
 		test(path.join(temporaryDirectoryPath, `office.${type}.git`));
-		console.log('…done.\n');
+		return `Succeeded`;
 	} catch (error) {
-		console.log('…failed with error', error);
+		return `Failed with an error ${error.message}`;
 	}
 }

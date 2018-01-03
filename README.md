@@ -58,11 +58,11 @@ code .git/hooks/pre-commit
 
 ```sh
 #!/usr/bin/env bash
-if [ command -v powershell ]
+if [ ! -z "command -v powershell" ]
 then
   powershell cmd/version-office-files.ps1
-elif
-then [ command -v pwsh ]
+elif [ ! -z "command -v pwsh" ]
+then
   pwsh cmd/version-office-files.ps1
 else
   echo "PowerShell is not installed."

@@ -18,5 +18,5 @@ export default function(word) {
 		if (spans[1] !== 'Hello,' || spans[2] !== 'World!' || spans[3] !== 'Hi,' || spans[4] !== 'it is me, Tom!' || spans[5] !== '\r') {
 			throw new Error('The resulting TXT file did not have matching spans to what was inserted.');
 		}
-	}
+	};
 }

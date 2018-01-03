@@ -4,7 +4,9 @@ import os from 'os';
 import path from 'path';
 import child_process from 'child_process';
 import util from 'util';
+
 import testWordBasic from './tests/word-basic';
+import testExcelBasic from './tests/excel-basic';
 
 const mkdtemp = util.promisify(fs.mkdtemp);
 const exec = util.promisify(child_process.exec);
@@ -12,6 +14,7 @@ const exec = util.promisify(child_process.exec);
 async function test() {
 	console.log('Running Office tests…\n');
 	await run(testWordBasic, 'docx', 'Word - basic');
+	await run(testExcelBasic, 'xlsx', 'Excel - basic');
 	// TODO: Add more tests.
 }
 

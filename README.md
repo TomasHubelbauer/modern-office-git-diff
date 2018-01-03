@@ -58,7 +58,15 @@ code .git/hooks/pre-commit
 
 ```sh
 #!/usr/bin/env bash
-powershell cmd/version-office-files.ps1
+if [ command -v powershell ]
+then
+  powershell cmd/version-office-files.ps1
+elif
+then [ command -v pwsh ]
+  pwsh cmd/version-office-files.ps1
+else
+  echo "PowerShell is not installed."
+fi
 ```
 
 Observe commit diffs to see Office file changes in the XML and TXT files.

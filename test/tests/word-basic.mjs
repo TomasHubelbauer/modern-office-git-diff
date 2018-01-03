@@ -16,7 +16,7 @@ export default function(word) {
 	return async (dir) => {
 		const spans = String(await readFile(path.join(dir, 'word/document.xml.txt'))).split('\n');
 		if (spans[1] !== 'Hello,' || spans[2] !== 'World!' || spans[3] !== 'Hi,' || spans[4] !== 'it is me, Tom!' || spans[5] !== '\r') {
-			throw new Error('The resulting TXT file did not have matching spans to what was inserted.');
+			throw new Error('The resulting TXT file did not have matching spans to what was inserted.\n' + spans.join('\n'));
 		}
 	};
 }

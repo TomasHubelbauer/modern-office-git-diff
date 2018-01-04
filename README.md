@@ -54,7 +54,7 @@ cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
 code .git/hooks/pre-commit
 ```
 
-- Paste the contents of (hook/pre-commit.sh)[hook/pre-commit.sh] into `.git/hooks/pre-commit`.
+- Paste the contents of [hook/pre-commit.sh](hook/pre-commit.sh) into `.git/hooks/pre-commit`.
 
 Observe commit diffs to see Office file changes in the XML and TXT files.
 
@@ -74,7 +74,7 @@ This repository is licensed under the [MIT license](LICENSE.md).
 
 ## Contributing
 
-Use (hook/pre-commit-development.sh)[hook/pre-commit-development.sh] when contributing to this repository to also run tests.
+Use [hook/pre-commit-development.sh](hook/pre-commit-development.sh) when contributing to this repository to also run tests.
 
 See [planned development](doc/tasks.md).
 

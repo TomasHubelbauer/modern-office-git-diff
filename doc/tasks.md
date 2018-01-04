@@ -2,6 +2,8 @@
 
 > Planned development:
 
-## Utilize GitHub/GitLab CI on top of the pre-commit hook
+## Set up GitHub CI
 
-This is to capture online editor commits.
+Travis, AppVeyor, …? What will be the simplest to set up?
+
+## Set up GitLab CI

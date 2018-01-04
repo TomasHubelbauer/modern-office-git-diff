@@ -54,7 +54,7 @@ cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
 code .git/hooks/pre-commit
 ```
 
-- Paste the contents of [hook/pre-commit.sh](hook/pre-commit.sh) into `.git/hooks/pre-commit`.
+- Paste the contents of [`hook/pre-commit.sh`](hook/pre-commit.sh) into `.git/hooks/pre-commit`.
 
 Observe commit diffs to see Office file changes in the XML and TXT files.
 
@@ -63,10 +63,24 @@ Observe commit diffs to see Office file changes in the XML and TXT files.
 Run PowerShell scripts using VS Code PowerShell Integrated Console to avoid security blocks.
 Open it by clicking on any `.ps1` file with integrated terminal open or running the *PowerShell: Show Integrated Console* VS Code command (`F1`+(`p`+`s`+`c`+`i`)).
 
-Run `cmd/run-tests.ps1`.
+Run `cmd/run-tests.ps1` which will run NodeJS tests in [`test/` (prerequisites)](/test).
 
 In this repository, the tests run together with the main script in a pre-commit hook in order to catch any bugs as soon as possible during development.
 When using this script as a tool in a repository other than this one, only the main script would be ran as shown in the Git pre-commit hook setup code.
+
+### Continuous Integration
+
+Even though it is recommended to run the test suite as a part of the development pre-commit hook, that won't cover GitHub/GitLab online editor contributions.
+
+See [Contributing](#Contributing) for details about repository hosting and mirroring.
+
+**[GitHub](doc/tasks.md)**
+
+See tasks.
+
+**[GitLab](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/pipelines)**
+
+See [`.gitlab-ci.yml`](.gitlab-ci.yml) for configuration.
 
 ## Licensing
 
@@ -74,7 +88,11 @@ This repository is licensed under the [MIT license](LICENSE.md).
 
 ## Contributing
 
-Use [hook/pre-commit-development.sh](hook/pre-commit-development.sh) when contributing to this repository to also run tests.
+The project is [hosted on GitHub](https://github.com/TomasHubelbauer/modern-office-git-diff)
+and is [mirrored to GitLab](https://gitlab.com/TomasHubelbauer/modern-office-git-diff)
+using ['pull' repository mirroring](https://docs.gitlab.com/ee/workflow/repository_mirroring.html).
+
+Use [`hook/pre-commit-development.sh`](hook/pre-commit-development.sh) when contributing to this repository to also run tests.
 
 See [planned development](doc/tasks.md).
 

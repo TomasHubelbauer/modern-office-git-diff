@@ -29,3 +29,9 @@
 - Set up the Git hook (extract hook code out form the `README.md` file)
 - Run Git commit
 - Verify extraction directory has been created and text file matches
+
+## Make tests run on each commit in this repo
+
+In normal repo utilizing this script, only the script would run,
+but as this is a development repository, tests should run as a
+pre-commit hook before the script itself does.

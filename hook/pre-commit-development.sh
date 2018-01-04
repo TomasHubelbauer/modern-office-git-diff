@@ -1,6 +1,6 @@
+#!/usr/bin/env bash
 # This hook also runs tests and is intended only for this repository.
 # For repositories other than this, use `pre-commit.sh`.
-#!/usr/bin/env bash
 if [ ! -z "command -v powershell" ]
 then
   powershell cmd/run-tests.ps1

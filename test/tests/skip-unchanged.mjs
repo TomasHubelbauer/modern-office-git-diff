@@ -1,4 +1,4 @@
-import { generateTemporaryOfficeFile, initializeGitRepository, stageGitFile, invokePowerShellScript } from '../util.mjs';
+import { generateTemporaryOfficeFile, initializeGitRepository, stageGitFile, invokePowerShellScript, commitGitStage, getLastModifiedDate } from '../util.mjs';
 
 export default async function() {
 	const { directoryPath, filePath } = await generateTemporaryOfficeFile('docx', word => {
@@ -9,7 +9,10 @@ export default async function() {
 	await initializeGitRepository(directoryPath);
 	await stageGitFile(filePath, directoryPath);
 	await invokePowerShellScript(directoryPath);
-	// TODO: Remember date of `word/document.xml.txt`
+	await commitGitStage(directoryPath);
+	const modified = await getLastModifiedDate('word/document.xml.txt', filePath);
 	await invokePowerShellScript(directoryPath);
-	// TODO: Compare date of `word/document.xml.txt`
+	if (modified !== await getLastModifiedDate('word/document.xml.txt', filePath)) {
+		throw new Error(`Modified date changed but file did not. ${modified} !== ${await getLastModifiedDate('word/document.xml.txt', filePath)}`);
+	}
 }

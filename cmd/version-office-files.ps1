@@ -46,7 +46,7 @@ Get-ChildItem .\* -Include ("*.docx", "*.xlsx", "*.pptx") -Recurse |
 }
 
 # Delete abandoned extractions
-Get-ChildItem .\* -Filter *.git -Recurse |
+Get-ChildItem . -Filter *.git -Recurse |
 	Foreach-Object {
 	If (-Not (Test-Path $_.FullName.TrimEnd(".git"))) {
 		$officePath = $_.FullName

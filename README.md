@@ -54,20 +54,7 @@ cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
 code .git/hooks/pre-commit
 ```
 
-`.git/hooks/pre-commit`
-
-```sh
-#!/usr/bin/env bash
-if [ ! -z "command -v powershell" ]
-then
-  powershell cmd/version-office-files.ps1
-elif [ ! -z "command -v pwsh" ]
-then
-  pwsh cmd/version-office-files.ps1
-else
-  echo "PowerShell is not installed."
-fi
-```
+- Paste the contents of (hook/pre-commit.sh)[hook/pre-commit.sh] into `.git/hooks/pre-commit`.
 
 Observe commit diffs to see Office file changes in the XML and TXT files.
 
@@ -78,11 +65,16 @@ Open it by clicking on any `.ps1` file with integrated terminal open or running 
 
 Run `cmd/run-tests.ps1`.
 
+In this repository, the tests run together with the main script in a pre-commit hook in order to catch any bugs as soon as possible during development.
+When using this script as a tool in a repository other than this one, only the main script would be ran as shown in the Git pre-commit hook setup code.
+
 ## Licensing
 
 This repository is licensed under the [MIT license](LICENSE.md).
 
 ## Contributing
+
+Use (hook/pre-commit-development.sh)[hook/pre-commit-development.sh] when contributing to this repository to also run tests.
 
 See [planned development](doc/tasks.md).
 

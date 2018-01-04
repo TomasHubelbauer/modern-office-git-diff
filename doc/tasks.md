@@ -26,14 +26,14 @@
 ## Add a test for the Git hook code
 
 - Create the Office file
-- Set up the Git hook (extract hook code out form the `README.md` file)
+- Set up the Git hook by copying over `hook/pre-commit.sh`
 - Run Git commit
 - Verify extraction directory has been created and text file matches
 
 ## Make tests run on each commit in this repo
 
-In normal repo utilizing this script, only the script would run,
-but as this is a development repository, tests should run as a
-pre-commit hook before the script itself does.
+Flesh out `hook/pre-commit-development.sh` to invoke both scripts.
 
-Possibly should utilize GitHub/GitLab CI instead of pre-commit hook?
+## Utilize GitHub/GitLab CI on top of the pre-commit hook
+
+This is to capture online editor commits.

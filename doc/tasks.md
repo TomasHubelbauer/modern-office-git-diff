@@ -37,3 +37,5 @@ Flesh out `hook/pre-commit-development.sh` to invoke both scripts.
 ## Utilize GitHub/GitLab CI on top of the pre-commit hook
 
 This is to capture online editor commits.
+
+## Fix `README.md` MarkDown links to hooks and use inline blocks for their names

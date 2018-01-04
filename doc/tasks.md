@@ -35,3 +35,5 @@
 In normal repo utilizing this script, only the script would run,
 but as this is a development repository, tests should run as a
 pre-commit hook before the script itself does.
+
+Possibly should utilize GitHub/GitLab CI instead of pre-commit hook?

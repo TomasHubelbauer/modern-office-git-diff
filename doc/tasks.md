@@ -2,33 +2,13 @@
 
 > Planned development:
 
-## Add a test for the skipping unchanged files
+## Finish `skip-unchanged.mjs` test
 
-- Run normal test
-- Remember the file change date of the text file
-- Run test again
-- Verify the date has not changed
+## Finish `verify-generated-warnings.mjs` test
 
-## Add a test for generated warnings
+## Finish `dispose-abandoned.mjs` test
 
-- Run a normal test
-- Verify `README.md` exists and matches expected text
-- Verify text file first line is the warning text
-- Verify corresponding XML file has the XML comment
-
-## Add a test for disposing of abandoned extraction directories
-
-- Run a normal test
-- Delete the Office file
-- Run the script again
-- Confirm directory doesn't exist anymore
-
-## Add a test for the Git hook code
-
-- Create the Office file
-- Set up the Git hook by copying over `hook/pre-commit.sh`
-- Run Git commit
-- Verify extraction directory has been created and text file matches
+## Finish `verify-pre-commit-hook.mjs` test
 
 ## Utilize GitHub/GitLab CI on top of the pre-commit hook
 

@@ -1,0 +1,5 @@
+image: microsoft/powershell
+
+run:
+    script:
+        - ./cmd/run-tests.ps1

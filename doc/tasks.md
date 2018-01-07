@@ -2,11 +2,17 @@
 
 > Planned development:
 
-## Set up GitHub CI
+## Set up GitHub Travis CI
 
-Travis, AppVeyor, …? What will be the simplest to set up?
+## Set up GitHub Circle CI
 
-## Set up GitLab CI
+## Set up GitHub AppVeyot CI
+
+## Set up GitHub Buddy CI
+
+## Finish GitLab CI
+
+Verify dependency installation helped.
 
 ## See if VS Code SCM UI could be made to run the hook in PowerShell
 

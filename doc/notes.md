@@ -6,6 +6,8 @@
 
 Attempted to fix GitLab CI to use `pwsh` because the image is Linux based.
 
+Added dependency installation to the script to install Node, Yarn, NVM.
+
 ## 2018-01-02 continued
 
 Using WSL (Ubuntu) to test portability of the PowerShell script.

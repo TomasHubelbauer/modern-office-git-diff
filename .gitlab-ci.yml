@@ -2,4 +2,4 @@ image: microsoft/powershell
 
 run:
     script:
-        - powershell cmd/run-tests.ps1
+        - pwsh cmd/run-tests.ps1

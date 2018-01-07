@@ -1,5 +1,7 @@
 # Modern Office Git Diff
 
+[![GitLab pipeline status](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/badges/master/pipeline.svg)](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/commits/master)
+
 > An experiment in tracking and diffing versions of modern Microsoft Office files in Git.
 
 Modern Office file formats are ZIP archives with XML files in them.

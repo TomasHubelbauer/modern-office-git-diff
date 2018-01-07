@@ -2,4 +2,15 @@ image: microsoft/powershell
 
 run:
     script:
+        # Fail on errors
+        - set -e
+        # Install NodeJS
+        - curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+        - sudo apt-get update && sudo apt-get install -y nodejs
+        # Install Yarn
+        - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+        - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+        - sudo apt-get update && sudo apt-get install -y yarn
+        # Install NVM
+        - yarn global add nvm
         - pwsh cmd/run-tests.ps1

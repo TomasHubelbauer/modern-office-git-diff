@@ -80,6 +80,8 @@ See tasks.
 
 **[GitLab](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/pipelines)**
 
+[![GitLab pipeline status](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/badges/master/pipeline.svg)](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/commits/master)
+
 See [`.gitlab-ci.yml`](.gitlab-ci.yml) for configuration.
 
 ## Licensing

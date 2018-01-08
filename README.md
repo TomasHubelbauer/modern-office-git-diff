@@ -84,7 +84,7 @@ See tasks.
 
 [![GitLab pipeline status](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/badges/master/pipeline.svg)](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/commits/master)
 
-See [`.gitlab-ci.yml`](.gitlab-ci.yml) for configuration.
+See [`.gitlab-ci.yml`](.gitlab-ci.yml) for configuration. Debugging the configuration is contrived because the GitLab repository is set as a pull mirror, which means introducing changes in it will stop the pulling from happening. The configuration can either be changed in the GitHub repository, with validation confirmed once another pull happens and the pipeline runs, or by setting up a temporary clone in GitLab, tweaking the configuration in it and then porting working changes over to the GitHub source repository.
 
 ## Licensing
 

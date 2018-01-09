@@ -12,5 +12,8 @@ run:
         - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
         - apt-get update && apt-get install -y yarn
         # Install NVM
-        - yarn global add nvm
+        - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+        # Install Git
+        - apt-get update && apt-get install -y git-all
+        # Run tests
         - pwsh cmd/run-tests.ps1

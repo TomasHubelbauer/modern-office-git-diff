@@ -17,3 +17,7 @@ Verify dependency installation helped.
 ## See if VS Code SCM UI could be made to run the hook in PowerShell
 
 The privileges security thing currently makes committing from VS Code fail.
+
+## Fix GitLab CI not failing properly
+
+`set -e` doesn't seem to work

@@ -88,9 +88,20 @@ See [`.gitlab-ci.yml`](.gitlab-ci.yml) for configuration. Debugging the configur
 
 This repository is licensed under the [MIT license](LICENSE.md).
 
+## Portability
+
+Use WSL (Ubuntu) to test portability of the PowerShell script.
+Use `lsb_release -a` to find WSL Ubuntu version and use
+[PowerShell Linux installation instructions](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
+
 ## To-Do
 
 Migrate to Azure Pipelines (used to use GitLab CI).
+
+Remove the GitLab repository CI.
+
+See if VS Code SCM UI could be made to run the hook in PowerShell
+The privileges security thing currently makes committing from VS Code fail.
 
 ## Contributing
 

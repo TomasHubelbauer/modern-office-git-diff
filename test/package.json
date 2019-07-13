@@ -9,7 +9,7 @@
     "start": "node --experimental-modules index.mjs"
   },
   "devDependencies": {
-    "officegen": "^0.4.5"
+    "officegen": "^0.4.8"
   },
   "dependencies": {}
 }

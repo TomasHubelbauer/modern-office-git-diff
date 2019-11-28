@@ -96,11 +96,12 @@ Use `lsb_release -a` to find WSL Ubuntu version and use
 
 ## To-Do
 
-Migrate to Azure Pipelines (used to use GitLab CI).
+### Migrate to GitHub Actions
 
-Remove the GitLab repository CI.
+### Remove the GitLab repository CI
 
-See if VS Code SCM UI could be made to run the hook in PowerShell
+### See if VS Code SCM UI could be made to run the hook in PowerShell
+
 The privileges security thing currently makes committing from VS Code fail.
 
 ## Contributing

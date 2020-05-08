@@ -118,11 +118,15 @@ See [planned development](doc/tasks.md).
 
 See `git log` and [development notes](doc/notes.md).
 
+Derived works based on this project:
+
+- [Tim Wiel (2020)](https://github.com/timwiel/libreoffice2git): derived work for OpenOffice document formats
+
 Some notable prior art:
 
-- [Martin Fenner (2014)](http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git/)
-- [Ben Balter (2015)](https://ben.balter.com/2015/02/06/word-diff/)
 - [Jon Hill (2017)](https://www.ficonsulting.com/filabs/MSOfficeGit)
+- [Ben Balter (2015)](https://ben.balter.com/2015/02/06/word-diff)
+- [Martin Fenner (2014)](http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git)
 
 All of these focus on on-demand (non-tracked) generating of text-only versions of the files, do not capture structure changes.
 This project aims to explore the other, potentially less useful, but nonetheless interesting, route of versioning both

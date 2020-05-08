@@ -11,6 +11,8 @@ it's not a leap to have the other as well if it bring something useful to the ta
 This is achieved using a PowerShell script which unpacks the ZIP file to a tracked directory,
 formats the XML files for nice diff and tracks the formatted files as well.
 
+> Looking for OpenOffice format support? Check out [Tim Wiel's version](https://github.com/timwiel/libreoffice2git)
+
 **Examples:**
 
 The XML diff captures the exact change whereas the TXT diff captures text-only change for quick content inspection.

@@ -70,10 +70,6 @@ Run `cmd/run-tests.ps1` which will run NodeJS tests in [`test/` (prerequisites)]
 In this repository, the tests run together with the main script in a pre-commit hook in order to catch any bugs as soon as possible during development.
 When using this script as a tool in a repository other than this one, only the main script would be ran as shown in the Git pre-commit hook setup code.
 
-## Licensing
-
-This repository is licensed under the [MIT license](LICENSE.md).
-
 ## Portability
 
 Use WSL (Ubuntu) to test portability of the PowerShell script.
@@ -82,21 +78,18 @@ Use `lsb_release -a` to find WSL Ubuntu version and use
 
 ## To-Do
 
-### Migrate to GitHub Actions
+### Set up GitHub Actions CI
 
 ### See if VS Code SCM UI could be made to run the hook in PowerShell
 
-The privileges security thing currently makes committing from VS Code fail.
+The privileges security thing currently makes committing through VS Code fail.
 
 ## Contributing
 
-Use [`hook/pre-commit-development.sh`](hook/pre-commit-development.sh) when contributing to this repository to also run tests.
+Use [`hook/pre-commit-development.sh`](hook/pre-commit-development.sh) when
+contributing to this repository to also run tests.
 
-See [planned development](doc/tasks.md).
-
-## Studying
-
-See `git log` and [development notes](doc/notes.md).
+## Related Works
 
 Derived works based on this project:
 
@@ -108,6 +101,8 @@ Some notable prior art:
 - [Ben Balter (2015)](https://ben.balter.com/2015/02/06/word-diff)
 - [Martin Fenner (2014)](http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git)
 
-All of these focus on on-demand (non-tracked) generating of text-only versions of the files, do not capture structure changes.
-This project aims to explore the other, potentially less useful, but nonetheless interesting, route of versioning both
-the compressed and the uncompressed forms of a file in parallel. See features and drawback for pros and cons.
+All of these focus on on-demand (non-tracked) generating of text-only versions of
+the files, do not capture structure changes.
+This project aims to explore the other, potentially less useful, but nonetheless
+interesting, route of versioning both the compressed and the uncompressed forms of
+a file in parallel. See the Features and Limitations sections for pros and cons.

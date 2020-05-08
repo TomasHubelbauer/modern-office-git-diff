@@ -70,22 +70,6 @@ Run `cmd/run-tests.ps1` which will run NodeJS tests in [`test/` (prerequisites)]
 In this repository, the tests run together with the main script in a pre-commit hook in order to catch any bugs as soon as possible during development.
 When using this script as a tool in a repository other than this one, only the main script would be ran as shown in the Git pre-commit hook setup code.
 
-### Continuous Integration
-
-Even though it is recommended to run the test suite as a part of the development pre-commit hook, that won't cover GitHub/GitLab online editor contributions.
-
-See [Contributing](#Contributing) for details about repository hosting and mirroring.
-
-**[GitHub](doc/tasks.md)**
-
-See tasks.
-
-**[GitLab](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/pipelines)**
-
-[![GitLab pipeline status](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/badges/master/pipeline.svg)](https://gitlab.com/TomasHubelbauer/modern-office-git-diff/commits/master)
-
-See [`.gitlab-ci.yml`](.gitlab-ci.yml) for configuration. Debugging the configuration is contrived because the GitLab repository is set as a pull mirror, which means introducing changes in it will stop the pulling from happening. The configuration can either be changed in the GitHub repository, with validation confirmed once another pull happens and the pipeline runs, or by setting up a temporary clone in GitLab, tweaking the configuration in it and then porting working changes over to the GitHub source repository.
-
 ## Licensing
 
 This repository is licensed under the [MIT license](LICENSE.md).
@@ -100,17 +84,11 @@ Use `lsb_release -a` to find WSL Ubuntu version and use
 
 ### Migrate to GitHub Actions
 
-### Remove the GitLab repository CI
-
 ### See if VS Code SCM UI could be made to run the hook in PowerShell
 
 The privileges security thing currently makes committing from VS Code fail.
 
 ## Contributing
-
-The project is [hosted on GitHub](https://github.com/TomasHubelbauer/modern-office-git-diff)
-and is [mirrored to GitLab](https://gitlab.com/TomasHubelbauer/modern-office-git-diff)
-using ['pull' repository mirroring](https://docs.gitlab.com/ee/workflow/repository_mirroring.html).
 
 Use [`hook/pre-commit-development.sh`](hook/pre-commit-development.sh) when contributing to this repository to also run tests.
 

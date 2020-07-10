@@ -1,5 +1,7 @@
 # Modern Office Git Diff
 
+![](https://github.com/tomashubelbauer/modern-office-git-diff/workflows/CI/badge.svg)
+
 > An experiment in tracking and diffing versions of modern Microsoft Office files in Git.
 
 Modern Office file formats are ZIP archives with XML files in them.

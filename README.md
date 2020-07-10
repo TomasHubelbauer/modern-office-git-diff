@@ -78,8 +78,6 @@ Use `lsb_release -a` to find WSL Ubuntu version and use
 
 ## To-Do
 
-### Set up GitHub Actions CI
-
 ### See if VS Code SCM UI could be made to run the hook in PowerShell
 
 The privileges security thing currently makes committing through VS Code fail.

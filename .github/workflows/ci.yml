@@ -30,7 +30,7 @@ jobs:
         $env:NVM_HOME=$NVM_HOME
         $env:NVM_PATH=$NVM_HOME
         $env:NVM_SYMLINK="$NVM_HOME\nodejs"
-        $env:PATH=$env:PATH + ";$NVM_HOME"
+        $Env:Path += ";$NVM_HOME"
         Invoke-WebRequest -Uri https://github.com/coreybutler/nvm-windows/releases/download/1.1.7/nvm-noinstall.zip -OutFile nvm.zip
         Expand-Archive nvm.zip -DestinationPath "$NVM_HOME"
         New-Item -Path "$NVM_HOME\settings.txt" -ItemType File 

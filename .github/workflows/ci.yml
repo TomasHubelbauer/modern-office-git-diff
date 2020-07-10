@@ -37,6 +37,8 @@ jobs:
         echo "SETUP_NODE_NVM_NVM: $NVM_HOME"
         echo "SETUP_NODE_NVM_NODE: $NVM_HOME\nodejs\node.exe"
         echo "SETUP_NODE_NVM_NPM: $NVM_HOME\nodejs\npm.cmd"
-    - run: powershell
-    - run: cmd/run-tests.ps1
+    - name: Run tests
+      run: |
+       powershell
+       cmd/run-tests.ps1
 

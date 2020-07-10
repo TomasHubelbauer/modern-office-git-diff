@@ -40,4 +40,4 @@ jobs:
     - name: Run tests
       run: |
        powershell
-       test-ci.ps1 
+       cmd/test-ci.ps1 

@@ -80,6 +80,8 @@ Use `lsb_release -a` to find WSL Ubuntu version and use
 
 ## To-Do
 
+### Configure Git to stut up about line endings in CI
+
 ### Upgrade Node to latest and drop MJS in favor of ESM
 
 ### See if VS Code SCM UI could be made to run the hook in PowerShell

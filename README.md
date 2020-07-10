@@ -76,7 +76,7 @@ When using this script as a tool in a repository other than this one, only the m
 
 Use WSL (Ubuntu) to test portability of the PowerShell script.
 Use `lsb_release -a` to find WSL Ubuntu version and use
-[PowerShell Linux installation instructions](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
+[PowerShell Linux installation instructions](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux)
 
 ## To-Do
 

@@ -1,13 +1,13 @@
 import officegen from 'officegen';
 import path from 'path';
 
-import testWordBasic from './tests/word-basic';
-import testExcelBasic from './tests/excel-basic';
-import testPowerPointBasic from './tests/powerPoint-basic';
-import testSkipUnchanged from './tests/skip-unchanged';
-import testVerifyGeneratedWarnings from './tests/verify-generated-warnings';
-import testDisposeAbandoned from './tests/dispose-abandoned';
-import testVerifyPreCommitHook from './tests/verify-pre-commit-hook';
+import testWordBasic from './tests/word-basic.mjs';
+import testExcelBasic from './tests/excel-basic.mjs';
+import testPowerPointBasic from './tests/powerPoint-basic.mjs';
+import testSkipUnchanged from './tests/skip-unchanged.mjs';
+import testVerifyGeneratedWarnings from './tests/verify-generated-warnings.mjs';
+import testDisposeAbandoned from './tests/dispose-abandoned.mjs';
+import testVerifyPreCommitHook from './tests/verify-pre-commit-hook.mjs';
 
 const tests = [
 	{ name: 'Word - basic', harness: testWordBasic },

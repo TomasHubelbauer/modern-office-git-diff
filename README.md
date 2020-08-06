@@ -80,7 +80,11 @@ Use `lsb_release -a` to find WSL Ubuntu version and use
 
 ## To-Do
 
-### Configure Git to stut up about line endings in CI
+### Document how GitHub Codespaces change the game for running this script even when editing online
+
+Of course the basic web editor UI still won't…
+
+### Configure Git to shut up about line endings in CI
 
 ### Upgrade Node to latest and drop MJS in favor of ESM
 
